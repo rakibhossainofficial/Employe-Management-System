@@ -19,5 +19,9 @@ body{
 
 body{
   background-color: #111;
+  color: #ffffff;
 }
 
+#tasklist::-webkit-scrollbar{
+  display: none;
+}
