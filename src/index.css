@@ -11,6 +11,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(58, 58, 58);
+  border-radius: 20px;
+}
+
 html,
 body{
   height: 100%;

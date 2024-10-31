@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
     
-     const [email, setEmail] = useState(" ")
-     const [password, setPassword] = useState("")
+    const [email, setEmail] = useState(" ")
+    const [password, setPassword] = useState("")
 
     const submitHandler = (e) =>{
         e.preventDefault()
-        console.log("email is", email)
-        console.log("password is",password)
-
+        // console.log("email is", email)
+        // console.log("password is",password)
+        handleLogin(email,password)
         setEmail("")
         setPassword("")
     }
 
   return (
-    <div className='h-screen w-screen flex  items-center justify-center '>
+    <div className='h-screen w-full flex  items-center justify-center '>
         <div className='border-2 border-emerald-600 py-20 px-16 rounded-xl shadow-xl shadow-emerald-500/40'>
             <form  onSubmit={(e) =>{
                 submitHandler(e)
@@ -40,4 +40,3 @@ const Login = () => {
 }
 
 export default Login
-

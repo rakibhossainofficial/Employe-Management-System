@@ -7,11 +7,9 @@ import AllTask from '../Others/AllTask';
 const AdminDashboard = () => {
   return (
     <div className="h-screen w-full">
-      {/* header  */}
         <Header />
         <CreatTask /> 
         <AllTask />
-
     </div>
   );
 }
